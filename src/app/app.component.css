@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  min-height: 650px;
+  min-width: 1024px;
+  overflow-x: hidden;
+  width: 100%;
+  display: block;
+  /*background: linear-gradient(to top, rgba(0,82,81,1), rgba(0,82,81,0.1));*/
+  background-color: #51929C;
+}

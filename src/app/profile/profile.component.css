@@ -1,0 +1,16 @@
+.list-group {
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+}
+.profile_tag{
+  text-align: center;
+  background-color: #E3E3E3;
+  color: #9b171e;
+}
+
+.page-header {
+  color: lavender;
+  shape-margin: 20px;
+}

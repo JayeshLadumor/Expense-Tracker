@@ -1,0 +1,20 @@
+<div ngClass="main">
+  <div ngClass="login">
+    <div ngClass="login_top">
+      <h2>Login</h2>
+    </div>
+    <div ngClass="login_form">
+      <form [formGroup]="loginForm" (ngSubmit)="onsubmit1()" >
+        <label>Username</label><br>
+        <input type="text" formControlName="username" autofocus><br>
+        <span *ngIf="!loginForm.get('username').valid && loginForm.get('username').touched" class="errormsg">Please enter a valid username!<br></span>
+        <br><label>Password</label><br>
+        <input type="password" formControlName="password" ><br>
+        <span *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched" class="errormsg">Please enter a valid password!<br></span>
+        <br><button type="submit" [ngClass]="{submit_valid: loginForm.valid, submit_invalid: !loginForm.valid}" [disabled]="!loginForm.valid">LOGIN</button>
+      </form>
+      <p [routerLink]="['/forget']">Forget Password?</p>
+      <p routerLink="/register">New User?</p>
+    </div>
+  </div>
+</div>
